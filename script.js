@@ -3,12 +3,16 @@ var letter = document.getElementById('letter');
 var capital = document.getElementById('capital');
 var number = document.getElementById('number');
 var length = document.getElementById('length');
+var eyeSlash =  document.getElementById('eye-slash');
+var eye = document.getElementById('eye');
+
 
 
 // lorsque l'utilisateur cliquesur le champ du mdp, afficher la boite de message
 myInput.onfocus = function (){
     document.getElementById("message").style.display="block"
 }
+
 
 
 // lorsque l'utilisateur clique en dehors du champ du mdp, masquer la boite de message
@@ -72,3 +76,29 @@ myInput.onkeyup = function (){
 
 // fonction pour voir le mdp
 
+var eyeSlash =  document.getElementById('eye-slash');
+var eye = document.getElementById('eye');
+var psw = document.getElementById('psw')
+
+eyeSlash.onclick = function (){
+    if(psw.type === 'password'){
+        psw.type = "text";
+        eye.style.display = "block";
+        eyeSlash.style.display = "none";
+    }else{
+        psw.type = "password";
+        eye.style.display = "none";
+        eyeSlash.style.display = "block";
+    }}
+
+
+    eye.onclick = function (){
+        if(psw.type === 'password'){
+            psw.type = "text";
+            eye.style.display = "block";
+            eyeSlash.style.display = "none";
+        }else{
+            psw.type = "password";
+            eye.style.display = "none";
+            eyeSlash.style.display = "block";
+        }}

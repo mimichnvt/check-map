@@ -60,6 +60,9 @@ i{
     position: absolute;
     padding-right: 5px;   
 }
+#eye{
+    display: none;
+}
 
 /*n Animation Message*/
 @keyframes anime {
