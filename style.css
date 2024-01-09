@@ -6,10 +6,11 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     min-height:100vh;
 
 }
-.container{
+.container, .message{
     background-color: #fff;
     width:350px;
     padding:20px;
@@ -26,4 +27,21 @@ input{
     padding: 12px;
     border:1px solid #ccc;
     outline:0;
+    color: #6e6c6c;
+    border-radius: 6px;
+}
+input[type="submit"]{
+    background-color: violet;
+    border: 1px solid violet;
+    border-radius: 6px;
+    margin: 5px 0;
+    color: #fff;
+}
+label{
+    color: #6e6c6c;
+    margin:5px 0;
+}
+.message{
+    margin-top: 10px;
+    letter-spacing: 0.5;
 }

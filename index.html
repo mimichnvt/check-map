@@ -5,17 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a41784e636.js" crossorigin="anonymous"></script>
     <title>Check Mot de passe</title>
 </head>
 <body>
     <div class="container">
         <form>
             <label>Utilisateur</label>
-            <input type="text">
+            <input type="text" required>
             <label>Mot de passe</label>
-            <input type="password">
+            <input type="password" required>
+            <input type="submit" value="Envoyé">
         </form>
     </div>
-    
+    <div class="message">
+        <h3>Le mot de passe doit contenir les éléments suivants</h3>
+        <p id="letter" class="invalid">Une lettre minuscule</p>
+        <p id="letter" class="invalid">Une lettre majuscule</p>
+        <p id="letter" class="invalid">Un chiffre</p>
+        <p id="letter" class="invalid">8 caractère minimum</p>
+
+
+    </div>
 </body>
 </html>
