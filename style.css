@@ -10,7 +10,7 @@ body{
     min-height:100vh;
 
 }
-.container, .message{
+.container, #message{
     background-color: #fff;
     width:350px;
     padding:20px;
@@ -41,7 +41,48 @@ label{
     color: #6e6c6c;
     margin:5px 0;
 }
-.message{
+#message{
     margin-top: 10px;
     letter-spacing: 0.5;
+    animation: anime 0.5s ease-out;
+    display:none;
+}
+
+/*n Animation Message*/
+@keyframes anime {
+    from{
+        transform: translateY(100px);
+    }
+    
+}
+
+h3{
+    font-size: 16px;
+}
+.message p {
+    margin-left:7px
+}
+
+.invalid{
+    color:red;
+}
+.invalid:before{
+    position: relative;
+    left:-7px;
+    content:"✕"
+}
+
+/*lorsque les exigences so,t respectées */
+
+.valid{
+    color:green;
+    position: relative;
+    left:-7px;
+    content:"✓"
+    
+}
+.valid:before{
+    position: relative;
+    left:-7px;
+    content:"✓"
 }
