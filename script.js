@@ -68,3 +68,7 @@ myInput.onkeyup = function (){
     }
 }
 
+
+
+// fonction pour voir le mdp
+

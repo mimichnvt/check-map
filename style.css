@@ -47,6 +47,19 @@ label{
     animation: anime 0.5s ease-out;
     display:none;
 }
+.eye{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    
+}
+#psw{
+    width:100%;
+}
+i{
+    position: absolute;
+    padding-right: 5px;   
+}
 
 /*n Animation Message*/
 @keyframes anime {
